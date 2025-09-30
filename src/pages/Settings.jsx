@@ -27,16 +27,18 @@ export default function SettingsPage() {
         </div>
       </section>
 
-      {/* Security */}
-      <section>
-        <h2 className="text-lg font-semibold mb-2">Security</h2>
-        <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-          Change Password
-        </button>
-        <button className="ml-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
-          Logout
-        </button>
-      </section>
+      
+<section>
+  <h2 className="text-lg font-semibold mb-2">Security</h2>
+  <div className="flex flex-wrap gap-2">
+    <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+      Change Password
+    </button>
+    <button className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+      Logout
+    </button>
+  </div>
+</section>
     </div>
   );
 }
