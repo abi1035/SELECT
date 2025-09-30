@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar({ isOpen = false, onClose = () => {} }) {
   const links = [
@@ -27,8 +27,13 @@ export default function Sidebar({ isOpen = false, onClose = () => {} }) {
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
         ].join(" ")}
       >
+     
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-xl font-bold">SELECT</h1>
+            <Link to="/" onClick={onClose}>
+            <h1 className="text-xl font-bold cursor-pointer hover:text-blue-600 transition">
+              SELECT
+            </h1>
+          </Link>
           <button
             className="md:hidden rounded-lg p-2 hover:bg-gray-100"
             onClick={onClose}
